@@ -1,6 +1,9 @@
 footer{
    .top-footer{
-        background-color: black;
+        // background-color: black;
+        background-image: url(../images/footer-bh.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
 
         .position{
             display: flex;
