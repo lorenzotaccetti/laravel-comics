@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap);body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header .top-header {
+  background-color: #0082f9;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+header .top-header span {
+  margin-left: 20px;
+}
+
+header .top-header span i {
+  font-size: 12px;
+}
+
+header .top-header span .arrow {
+  font-size: 16px;
+}
+
+header .bottom-header {
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+header .bottom-header .position {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .bottom-header .position ul {
+  display: flex;
+  align-items: center;
+}
+
+header .bottom-header .position ul li {
+  color: #4f504f;
+  padding: 0 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+header .bottom-header .position ul li.active {
+  color: #0082f9;
+}
+
+header .bottom-header .position input {
+  border: none;
+  border-bottom: 2px solid #0082f9;
+  text-align: center;
+  font-size: 18px;
+}
+
+header .bottom-header .position .search {
+  margin-left: -20px;
+  cursor: pointer;
+}
+
+header .jumbotron {
+  height: 500px;
+  overflow: hidden;
+}
+
+header .jumbotron img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
