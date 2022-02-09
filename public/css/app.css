@@ -147,6 +147,25 @@ header .jumbotron img {
   color: #0082f9;
 }
 
+.main-nav {
+  background-color: #0082f9;
+  padding: 25px 0;
+  text-transform: uppercase;
+  color: white;
+}
+.main-nav .box {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+.main-nav .box .nav-img {
+  margin-right: 10px;
+}
+.main-nav .box .nav-img img {
+  width: 60px;
+}
+
 footer .top-footer {
   background-image: url(../images/footer-bg.jpg);
   background-repeat: no-repeat;

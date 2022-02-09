@@ -15,4 +15,12 @@
         
     </div>
 </div>
+
+<div class="main-nav">
+    <div class="container">
+
+        @include('components.nav')
+        
+    </div>
+</div>
 @endsection
