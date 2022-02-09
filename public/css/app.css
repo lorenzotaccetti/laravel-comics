@@ -22,6 +22,12 @@ ul {
   margin: auto;
 }
 
+.position {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 header .top-header {
   background-color: #0082f9;
   width: 100%;
@@ -95,5 +101,86 @@ header .jumbotron img {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+footer .top-footer {
+  background-color: black;
+}
+
+footer .top-footer .position {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .top-footer .position .footer-links {
+  display: flex;
+}
+
+footer .top-footer .position .footer-links ul {
+  list-style-type: none;
+  margin: 0 30px;
+}
+
+footer .top-footer .position .footer-links ul h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+footer .top-footer .position .footer-links ul li {
+  margin: 15px 0;
+}
+
+footer .top-footer .position .footer-links ul li a {
+  text-decoration: none;
+  color: #7b7879;
+}
+
+footer .top-footer .position .footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .bottom-footer {
+  background-color: #4f504f;
+}
+
+footer .bottom-footer .btn {
+  padding: 20px;
+}
+
+footer .bottom-footer .btn button {
+  background-color: #4f504f;
+  border: 2px solid #0082f9;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+footer .bottom-footer .btn button:hover {
+  background-color: #0082f9;
+}
+
+footer .bottom-footer .socials {
+  display: flex;
+  align-items: center;
+}
+
+footer .bottom-footer .socials span {
+  color: #0082f9;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-right: 20px;
+}
+
+footer .bottom-footer .socials img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 10px;
 }
 

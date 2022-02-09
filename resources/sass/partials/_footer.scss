@@ -1,0 +1,82 @@
+footer{
+   .top-footer{
+        background-color: black;
+
+        .position{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .footer-links{
+                display: flex;
+        
+                ul{
+                    list-style-type: none;
+                    margin: 0 30px;
+                    
+                    h2{
+                        color: white;
+                        text-transform: uppercase;
+                        font-size: 25px;
+                        margin: 10px 0;
+                    }
+        
+                    li{
+                        margin: 15px 0;
+        
+                        a{
+                            text-decoration: none;
+                            color: #7b7879;
+        
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+   } 
+
+   .bottom-footer{
+       background-color: $secondary-color;
+
+       .btn{
+        padding: 20px;
+        
+            button{
+                background-color: $secondary-color;
+                border: 2px solid $primary-color;
+                padding: 15px 20px;
+                text-transform: uppercase;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $primary-color;
+                }
+            }
+        }
+
+        .socials{
+            display: flex;
+            align-items: center;
+
+            span{
+                color: $primary-color;
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 900;
+                margin-right: 20px;
+            }
+
+            img{
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                margin: 0 10px;
+            }
+        }
+   }
+}
