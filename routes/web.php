@@ -18,8 +18,8 @@ Route::get('/', function () {
     $comics_array = config('comics');
 
     $data = [
-        'comic_array' => $comics_array
-    ]
+        'comics_array' => $comics_array
+    ];
 
 
     return view('homepage', $data);
