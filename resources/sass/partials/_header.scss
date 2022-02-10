@@ -40,8 +40,13 @@ header{
                     font-size: 18px;
                     cursor: pointer;
 
-                    &.active{
-                        color: $primary-color;
+                    a{
+                        text-decoration: none;
+                        color: $secondary-color;
+
+                        &.active{
+                            color: $primary-color;
+                        }
                     }
                 }
             }

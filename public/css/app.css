@@ -22,6 +22,11 @@ ul {
   margin: auto;
 }
 
+.container-product {
+  width: 70%;
+  margin: auto;
+}
+
 .position {
   display: flex;
   align-items: center;
@@ -65,7 +70,11 @@ header .bottom-header .position ul li {
   font-size: 18px;
   cursor: pointer;
 }
-header .bottom-header .position ul li.active {
+header .bottom-header .position ul li a {
+  text-decoration: none;
+  color: #4f504f;
+}
+header .bottom-header .position ul li a.active {
   color: #0082f9;
 }
 header .bottom-header .position input {
@@ -91,37 +100,41 @@ header .jumbotron img {
      object-position: top;
 }
 
-.main-content {
+main .main-content {
   background-color: #1c1c1c;
   padding: 30px 0;
   text-transform: uppercase;
   color: white;
 }
-.main-content .comic-list .section-title {
+main .main-content .comic-list .section-title {
   font-size: 25px;
   background-color: #0082f9;
   padding: 8px 18px;
   display: inline-block;
 }
-.main-content .comic-list .comics {
+main .main-content .comic-list .comics {
   padding: 50px 0 30px;
   display: flex;
   flex-wrap: wrap;
 }
-.main-content .comic-list .comics .single-comic {
+main .main-content .comic-list .comics .single-comic {
   width: calc(16.6666666667% - 20px);
   margin: 20px 10px;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
   font-size: 18px;
   cursor: pointer;
 }
-.main-content .comic-list .comics .single-comic .comic-thumb {
+main .main-content .comic-list .comics .single-comic a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+}
+main .main-content .comic-list .comics .single-comic a .comic-thumb {
   height: 250px;
   margin-bottom: 20px;
 }
-.main-content .comic-list .comics .single-comic .comic-thumb img {
+main .main-content .comic-list .comics .single-comic a .comic-thumb img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -129,11 +142,11 @@ header .jumbotron img {
   -o-object-position: top;
      object-position: top;
 }
-.main-content .comic-list .more {
+main .main-content .comic-list .more {
   text-align: center;
   padding-bottom: 30px;
 }
-.main-content .comic-list .more button {
+main .main-content .comic-list .more button {
   color: white;
   background-color: #0082f9;
   border: 2px solid #0082f9;
@@ -142,28 +155,118 @@ header .jumbotron img {
   text-transform: uppercase;
   cursor: pointer;
 }
-.main-content .comic-list .more button:hover {
+main .main-content .comic-list .more button:hover {
   background-color: white;
   color: #0082f9;
 }
-
-.main-nav {
+main .main-nav {
   background-color: #0082f9;
   padding: 25px 0;
   text-transform: uppercase;
   color: white;
 }
-.main-nav .box {
+main .main-nav .box {
   display: flex;
   align-items: center;
   cursor: pointer;
   font-size: 20px;
 }
-.main-nav .box .nav-img {
+main .main-nav .box .nav-img {
   margin-right: 10px;
 }
-.main-nav .box .nav-img img {
+main .main-nav .box .nav-img img {
   width: 60px;
+}
+main .main-product .top-product {
+  background-color: #0082f9;
+  padding: 50px 0;
+  text-transform: uppercase;
+}
+main .main-product .top-product .container-product {
+  position: relative;
+}
+main .main-product .top-product .container-product .thumb-position {
+  position: absolute;
+  top: -270px;
+  left: 0;
+  border: 1px solid white;
+}
+main .main-product .top-product .container-product .thumb-position .comic, main .main-product .top-product .container-product .thumb-position .view {
+  position: absolute;
+  left: 0;
+  background-color: #00a8d8;
+  color: white;
+  padding: 3px 5px;
+}
+main .main-product .top-product .container-product .thumb-position .comic {
+  top: 0;
+}
+main .main-product .top-product .container-product .thumb-position .view {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+main .main-product .middle-product {
+  padding: 40px 0;
+}
+main .main-product .middle-product .product-position {
+  display: flex;
+  align-items: center;
+}
+main .main-product .middle-product .product-position .product-info {
+  padding-right: 60px;
+}
+main .main-product .middle-product .product-position .product-info .product-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #1f495f;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+main .main-product .middle-product .product-position .product-info .product-price {
+  color: white;
+  background-color: #53b957;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #4f504f;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+main .main-product .middle-product .product-position .product-info .product-price .price {
+  flex-grow: 1;
+  color: #b7f992;
+}
+main .main-product .middle-product .product-position .product-info .product-price .price .white {
+  color: white;
+}
+main .main-product .middle-product .product-position .product-info .product-price .available {
+  text-transform: uppercase;
+  color: #b7f992;
+  padding-right: 30px;
+  font-weight: 700;
+}
+main .main-product .middle-product .product-position .product-info .product-price .check {
+  padding-right: 20px;
+}
+main .main-product .middle-product .product-position .product-info .product-description {
+  color: #4f504f;
+  font-size: 18px;
+  line-height: 1.8;
+}
+main .main-product .middle-product .product-position .advertisement {
+  text-transform: uppercase;
+  text-align: right;
+  color: #4f504f;
+  font-weight: 700;
+}
+main .main-product .middle-product .product-position .advertisement .adv-img {
+  width: 400px;
+  height: 350px;
+}
+main .main-product .bottom-product {
+  background-color: #f6f6f6;
+  border-top: 1px solid #e7e7e7;
+  padding: 30px 0;
 }
 
 footer .top-footer {

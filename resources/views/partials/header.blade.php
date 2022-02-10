@@ -24,8 +24,11 @@
                     <li>
                         Characters
                     </li>
-                    <li class="active">
-                        Comics
+                    <li>
+                        <a href="{{ route('homepage') }}" 
+                        class="{{ Request::route()->getName() === 'homepage' ? 'active' : '' }}">
+                            Comics
+                        </a>
                     </li>
                     <li>
                         Movies
@@ -50,6 +53,7 @@
                     </li>
                     <li>
                         Shop
+                        <i class="fas fa-sort-down arrow"></i>
                     </li>
                 </ul>
             </div>
