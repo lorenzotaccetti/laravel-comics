@@ -63,17 +63,21 @@
                         <div class="left">
                             Art by:
                         </div>
-                        {{-- <div class="right blue">
-                            {{ $product['artists'] }}
-                        </div> --}}
+                        <div class="right blue">
+                            @foreach ($product['artists'] as $artist)
+                                {{ $artist }} {{ !$loop->last ? ', ' : '' }}
+                            @endforeach
+                        </div>
                     </div>
                     <div class="bottom-table">
                         <div class="left bottom-border">
                             Written by:
                         </div>
-                        {{-- <div class="right blue bottom-border">
-                            {{ $product['writers'] }}
-                        </div> --}}
+                        <div class="right blue bottom-border">
+                            @foreach ($product['writers'] as $writer)
+                                {{ $writer }} {{!$loop->last ? ', ' : '' }}
+                            @endforeach
+                        </div>
                     </div>
                 </div>
                 <div class="talent-specs">
